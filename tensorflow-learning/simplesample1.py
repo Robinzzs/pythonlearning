@@ -14,6 +14,7 @@ y = k * x_data + b
 loss = tf.reduce_mean(tf.square(y_data-y))
 #cg
 optimizer = tf.train.GradientDescentOptimizer(0.2)
+
 #minimize cost function
 train = optimizer.minimize(loss)
 
